@@ -11,6 +11,7 @@
 
   body {
     @apply bg-midnight-950 text-midnight-50 font-body antialiased;
+    background-image: linear-gradient(180deg, #071c4d 0%, #081538 22%, #03060b 65%);
     overflow-x: hidden;
   }
 }
@@ -29,11 +30,11 @@
   }
 
   .bg-glass {
-    @apply bg-midnight-900/60 backdrop-blur-xl border border-midnight-700/50;
+    @apply bg-[#101d49]/80 backdrop-blur-xl border border-[#5369b2]/45;
   }
 
   .bg-glass-light {
-    @apply bg-midnight-800/40 backdrop-blur-md border border-midnight-600/40;
+    @apply bg-[#1a2d63]/65 backdrop-blur-md border border-[#6f87d0]/35;
   }
 
   .shadow-glow-gold {

@@ -62,15 +62,15 @@ export default function PlaySection() {
         {!gameStarted ? (
           <div className="relative rounded-3xl overflow-hidden group cursor-pointer" onClick={startGame}>
             <img
-              src="https://images.pexels.com/photos/1464044/pexels-photo-1464044.jpeg?auto=compress&cs=tinysrgb&w=1600"
-              alt="Iniciar aventura"
-              className="w-full h-[400px] sm:h-[500px] object-cover group-hover:scale-105 transition-transform duration-700"
+              src="/assets/images/IMG_6101.jpeg"
+              alt="Tela inicial de WORLDBOUND"
+              className="w-full h-[400px] sm:h-[500px] object-cover object-center group-hover:scale-105 transition-transform duration-700"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-midnight-950 via-midnight-950/50 to-midnight-950/30" />
+            <div className="absolute inset-0 bg-gradient-to-t from-midnight-950/90 via-midnight-950/10 to-transparent" />
 
             <div className="absolute inset-0 flex flex-col items-center justify-center gap-6">
-              <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-crystal-500/20 backdrop-blur-md border border-crystal-400/40 flex items-center justify-center group-hover:bg-crystal-500/30 group-hover:scale-110 transition-all duration-300 shadow-glow-crystal">
-                <Play className="w-10 h-10 sm:w-12 sm:h-12 text-white fill-current ml-1" />
+              <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-gold-400/90 backdrop-blur-md border-2 border-gold-100/80 flex items-center justify-center group-hover:bg-gold-300 group-hover:scale-110 transition-all duration-300 shadow-glow-gold">
+                <Play className="w-10 h-10 sm:w-12 sm:h-12 text-midnight-950 fill-current ml-1" />
               </div>
               <div className="text-center">
                 <h3 className="font-display font-bold text-2xl sm:text-3xl text-white mb-2">

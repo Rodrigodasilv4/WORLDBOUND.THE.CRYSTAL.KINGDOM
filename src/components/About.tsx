@@ -13,8 +13,7 @@ const features = [
     title: 'Exploração Vasta',
     description:
       'Percorra florestas encantadas, montanhas cristalinas, cavernas brilhantes e ilhas flutuantes num mundo aberto cheio de segredos.',
-    image:
-      'https://images.pexels.com/photos/32877821/pexels-photo-32877821.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/assets/images/IMG_6099.jpeg',
     accent: 'crystal',
   },
   {
@@ -22,8 +21,7 @@ const features = [
     title: 'Combate Dinâmico',
     description:
       'Enfrente criaturas lendárias em batalhas em tempo real. Use ataques, esquivas e habilidades especiais para vencer inimigos poderosos.',
-    image:
-      'https://images.pexels.com/photos/10068853/pexels-photo-10068853.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/assets/images/IMG_6099.jpeg',
     accent: 'ember',
   },
   {
@@ -31,8 +29,7 @@ const features = [
     title: 'Missões e Aventuras',
     description:
       'Complete missões épicas, converse com habitantes do reino e desvende a história do Reino de Cristal enquanto progreda na sua jornada.',
-    image:
-      'https://images.pexels.com/photos/12650746/pexels-photo-12650746.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/assets/images/IMG_6101.jpeg',
     accent: 'gold',
   },
   {
@@ -40,8 +37,7 @@ const features = [
     title: 'Evolução do Personagem',
     description:
       'Ganhe experiência, suba de nível, desbloqueie novas habilidades e torne-se mais forte a cada batalha vencida.',
-    image:
-      'https://images.pexels.com/photos/4913385/pexels-photo-4913385.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/assets/images/IMG_6101.jpeg',
     accent: 'crystal',
   },
   {
@@ -49,8 +45,7 @@ const features = [
     title: 'Equipamentos Lendários',
     description:
       'Encontre e equipe armas, armaduras e itens raros espalhados pelo mundo. Cada equipamento altera sua aparência e poder.',
-    image:
-      'https://images.pexels.com/photos/10068847/pexels-photo-10068847.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/assets/images/IMG_6099.jpeg',
     accent: 'gold',
   },
   {
@@ -58,8 +53,7 @@ const features = [
     title: 'O Reino de Cristal',
     description:
       'Descubra a lore de um reino antigo formado por cristais mágicos, onde cada região guarda mistérios e perigos únicos.',
-    image:
-      'https://images.pexels.com/photos/34611655/pexels-photo-34611655.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/assets/images/IMG_6099.jpeg',
     accent: 'crystal',
   },
 ];
@@ -139,9 +133,9 @@ export default function About() {
 
         <div className="mt-20 relative rounded-3xl overflow-hidden">
           <img
-            src="https://images.pexels.com/photos/9891031/pexels-photo-9891031.jpeg?auto=compress&cs=tinysrgb&w=1600"
+            src="/assets/images/IMG_6099.jpeg"
             alt="Drako - Companheiro"
-            className="w-full h-[400px] object-cover"
+            className="w-full h-[400px] object-cover object-bottom"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-midnight-950 via-midnight-950/70 to-transparent" />
           <div className="absolute inset-0 flex items-center">

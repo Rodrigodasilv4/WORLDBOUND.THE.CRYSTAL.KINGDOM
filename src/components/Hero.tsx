@@ -1,9 +1,6 @@
 import { Play, Download, ChevronDown, Sparkles, Swords, Map } from 'lucide-react';
 
-const heroImage =
-  'https://images.pexels.com/photos/14332269/pexels-photo-14332269.jpeg?auto=compress&cs=tinysrgb&w=1920';
-const floatingIslandImage =
-  'https://images.pexels.com/photos/18069363/pexels-photo-18069363.png?auto=compress&cs=tinysrgb&w=940';
+const heroImage = '/assets/images/IMG_6099.jpeg';
 
 export default function Hero() {
   const scrollTo = (href: string) => {
@@ -21,13 +18,13 @@ export default function Hero() {
           alt="Reino de Cristal"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-midnight-950/70 via-midnight-950/60 to-midnight-950" />
-        <div className="absolute inset-0 bg-gradient-to-r from-midnight-950/60 via-transparent to-midnight-950/60" />
+        <div className="absolute inset-0 bg-gradient-to-b from-sky-950/10 via-sky-950/10 to-midnight-950/95" />
+        <div className="absolute inset-0 bg-gradient-to-r from-midnight-950/45 via-transparent to-midnight-950/20" />
       </div>
 
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-crystal-500/20 rounded-full blur-[100px] animate-glow-pulse" />
+      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-sky-400/15 rounded-full blur-[100px] animate-glow-pulse" />
       <div
-        className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-gold-500/15 rounded-full blur-[100px] animate-glow-pulse"
+        className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-gold-500/20 rounded-full blur-[100px] animate-glow-pulse"
         style={{ animationDelay: '2s' }}
       />
 
@@ -40,8 +37,8 @@ export default function Hero() {
         </div>
 
         <h1 className="font-display font-black text-5xl sm:text-7xl lg:text-8xl tracking-tight mb-4 animate-fade-in-up">
-          <span className="block text-white drop-shadow-2xl">WORLDBOUND</span>
-          <span className="block text-2xl sm:text-3xl lg:text-4xl text-gradient-gold font-bold mt-3 tracking-[0.2em]">
+          <span className="block text-gold-200 drop-shadow-[0_4px_0_#7c3f12]">WORLDBOUND</span>
+          <span className="block text-2xl sm:text-3xl lg:text-4xl text-white font-bold mt-3 tracking-[0.2em] drop-shadow-lg">
             THE CRYSTAL KINGDOM
           </span>
         </h1>
@@ -100,16 +97,11 @@ export default function Hero() {
 
       <button
         onClick={() => scrollTo('#about')}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 text-midnight-300 hover:text-gold-300 transition-colors animate-float-slow"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 text-white/80 hover:text-gold-300 transition-colors animate-float-slow"
       >
         <ChevronDown className="w-8 h-8" />
       </button>
 
-      <img
-        src={floatingIslandImage}
-        alt="Ilha flutuante"
-        className="absolute top-20 right-10 w-32 lg:w-48 opacity-40 animate-float-slow hidden lg:block z-5"
-      />
     </section>
   );
 }

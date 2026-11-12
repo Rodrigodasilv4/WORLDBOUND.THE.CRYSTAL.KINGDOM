@@ -1,4 +1,5 @@
-import { Heart, Coffee, Sparkles, Download } from 'lucide-react';
+import { useState } from 'react';
+import { Heart, Coffee, Sparkles, Download, Copy, Check } from 'lucide-react';
 
 const tiers = [
   {
@@ -41,6 +42,22 @@ const accentText: Record<string, string> = {
 };
 
 export default function Support() {
+  const [pixCopied, setPixCopied] = useState(false);
+  const [pixCopyError, setPixCopyError] = useState(false);
+  const pixKey = 'snowdry77@jim.com';
+
+  const copyPixKey = async () => {
+    setPixCopyError(false);
+
+    try {
+      await navigator.clipboard.writeText(pixKey);
+      setPixCopied(true);
+      window.setTimeout(() => setPixCopied(false), 2200);
+    } catch {
+      setPixCopyError(true);
+    }
+  };
+
   return (
     <section
       id="support"
@@ -113,7 +130,42 @@ export default function Support() {
           ))}
         </div>
 
-        <div className="mt-12 text-center">
+        <div className="mt-12 grid lg:grid-cols-[1fr_auto] gap-6 items-center rounded-2xl bg-glass-light p-6 sm:p-8 border border-gold-400/20">
+          <div className="flex items-start gap-4 text-left">
+            <div className="w-11 h-11 shrink-0 rounded-xl bg-gold-500/15 flex items-center justify-center">
+              <Heart className="w-5 h-5 text-gold-400 fill-current" />
+            </div>
+            <div>
+              <h3 className="font-display font-semibold text-lg text-white mb-1">
+                Quer ajudar diretamente?
+              </h3>
+              <p className="text-sm text-midnight-200 leading-relaxed">
+                Envie qualquer valor pelo Pix e ajude a manter o WORLDBOUND vivo.
+              </p>
+              <p className="mt-3 text-xs text-midnight-300 uppercase tracking-wider">
+                Chave Pix
+              </p>
+              <p className="text-base sm:text-lg font-semibold text-gold-300 break-all">
+                {pixKey}
+              </p>
+            </div>
+          </div>
+          <button
+            type="button"
+            onClick={copyPixKey}
+            className="w-full lg:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-gold-500 text-midnight-950 font-semibold text-sm hover:bg-gold-400 transition-colors"
+          >
+            {pixCopied ? <Check className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
+            {pixCopied ? 'Chave copiada' : 'Copiar chave Pix'}
+          </button>
+          {pixCopyError && (
+            <p className="lg:col-start-2 text-xs text-ember-300 text-center lg:text-right">
+              Não foi possível copiar. Selecione a chave manualmente.
+            </p>
+          )}
+        </div>
+
+        <div className="mt-8 text-center">
           <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-glass-light">
             <Heart className="w-4 h-4 text-ember-400 fill-current" />
             <span className="text-sm text-midnight-100">

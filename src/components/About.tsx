@@ -21,7 +21,7 @@ const features = [
     title: 'Combate Dinâmico',
     description:
       'Enfrente criaturas lendárias em batalhas em tempo real. Use ataques, esquivas e habilidades especiais para vencer inimigos poderosos.',
-    image: '/assets/images/IMG_6099.jpeg',
+    image: '/assets/images/IMG_6096.jpeg',
     accent: 'ember',
   },
   {
@@ -37,7 +37,7 @@ const features = [
     title: 'Evolução do Personagem',
     description:
       'Ganhe experiência, suba de nível, desbloqueie novas habilidades e torne-se mais forte a cada batalha vencida.',
-    image: '/assets/images/IMG_6101.jpeg',
+    image: '/assets/images/IMG_6100.jpeg',
     accent: 'crystal',
   },
   {
@@ -45,7 +45,7 @@ const features = [
     title: 'Equipamentos Lendários',
     description:
       'Encontre e equipe armas, armaduras e itens raros espalhados pelo mundo. Cada equipamento altera sua aparência e poder.',
-    image: '/assets/images/IMG_6099.jpeg',
+    image: '/assets/images/IMG_6097.jpeg',
     accent: 'gold',
   },
   {
@@ -53,7 +53,7 @@ const features = [
     title: 'O Reino de Cristal',
     description:
       'Descubra a lore de um reino antigo formado por cristais mágicos, onde cada região guarda mistérios e perigos únicos.',
-    image: '/assets/images/IMG_6099.jpeg',
+    image: '/assets/images/737CBDD9-E2E1-486A-A844-FDA84C968314.png',
     accent: 'crystal',
   },
 ];
@@ -133,7 +133,7 @@ export default function About() {
 
         <div className="mt-20 relative rounded-3xl overflow-hidden">
           <img
-            src="/assets/images/IMG_6099.jpeg"
+            src="/assets/images/IMG_6099 copy.jpeg"
             alt="Drako - Companheiro"
             className="w-full h-[400px] object-cover object-bottom"
           />

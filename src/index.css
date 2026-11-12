@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-midnight-950 text-midnight-50 font-body antialiased;
+    overflow-x: hidden;
+  }
+}
+
+@layer utilities {
+  .text-gradient-gold {
+    @apply bg-gradient-to-r from-gold-300 via-gold-400 to-gold-600 bg-clip-text text-transparent;
+  }
+
+  .text-gradient-crystal {
+    @apply bg-gradient-to-r from-crystal-200 via-crystal-300 to-crystal-400 bg-clip-text text-transparent;
+  }
+
+  .text-gradient-ember {
+    @apply bg-gradient-to-r from-ember-300 via-ember-400 to-ember-500 bg-clip-text text-transparent;
+  }
+
+  .bg-glass {
+    @apply bg-midnight-900/60 backdrop-blur-xl border border-midnight-700/50;
+  }
+
+  .bg-glass-light {
+    @apply bg-midnight-800/40 backdrop-blur-md border border-midnight-600/40;
+  }
+
+  .shadow-glow-gold {
+    box-shadow: 0 0 30px rgba(251, 191, 36, 0.25), 0 0 60px rgba(251, 191, 36, 0.1);
+  }
+
+  .shadow-glow-crystal {
+    box-shadow: 0 0 30px rgba(0, 176, 154, 0.25), 0 0 60px rgba(0, 176, 154, 0.1);
+  }
+
+  .shadow-glow-ember {
+    box-shadow: 0 0 30px rgba(251, 78, 14, 0.3), 0 0 60px rgba(251, 78, 14, 0.15);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #03060b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #00b09a, #006b60);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #33c0ad, #008d80);
+}
+
+::selection {
+  background: rgba(251, 191, 36, 0.3);
+  color: #fffbeb;
+}

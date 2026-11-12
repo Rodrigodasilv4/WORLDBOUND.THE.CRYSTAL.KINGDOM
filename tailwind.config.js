@@ -1,0 +1,91 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {
+      colors: {
+        crystal: {
+          50: '#e6f7f5',
+          100: '#ccf0eb',
+          200: '#99e0d6',
+          300: '#66d0c2',
+          400: '#33c0ad',
+          500: '#00b09a',
+          600: '#008d80',
+          700: '#006b60',
+          800: '#004840',
+          900: '#002620',
+          950: '#001318',
+        },
+        gold: {
+          50: '#fffbeb',
+          100: '#fef3c7',
+          200: '#fde68a',
+          300: '#fcd34d',
+          400: '#fbbf24',
+          500: '#f59e0b',
+          600: '#d97706',
+          700: '#b45309',
+          800: '#92400e',
+          900: '#78350f',
+        },
+        midnight: {
+          50: '#e8edf5',
+          100: '#c5cee0',
+          200: '#9aa9c5',
+          300: '#6e80a8',
+          400: '#4a5f8b',
+          500: '#2e4273',
+          600: '#213559',
+          700: '#172842',
+          800: '#0e1a2c',
+          900: '#070d16',
+          950: '#03060b',
+        },
+        ember: {
+          50: '#fff4ed',
+          100: '#ffe6d4',
+          200: '#ffc9a8',
+          300: '#ffa371',
+          400: '#ff7438',
+          500: '#fb4e0e',
+          600: '#ec3a05',
+          700: '#c42c07',
+          800: '#9c250e',
+          900: '#7e220f',
+        },
+      },
+      fontFamily: {
+        display: ['"Cinzel"', 'serif'],
+        body: ['"Inter"', 'system-ui', 'sans-serif'],
+      },
+      animation: {
+        'float-slow': 'float 8s ease-in-out infinite',
+        'float-medium': 'float 6s ease-in-out infinite',
+        'shimmer': 'shimmer 3s linear infinite',
+        'glow-pulse': 'glowPulse 4s ease-in-out infinite',
+        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+        'spin-slow': 'spin 20s linear infinite',
+      },
+      keyframes: {
+        float: {
+          '0%, 100%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(-20px)' },
+        },
+        shimmer: {
+          '0%': { backgroundPosition: '-1000px 0' },
+          '100%': { backgroundPosition: '1000px 0' },
+        },
+        glowPulse: {
+          '0%, 100%': { opacity: '0.4', filter: 'blur(40px)' },
+          '50%': { opacity: '0.7', filter: 'blur(60px)' },
+        },
+        fadeInUp: {
+          '0%': { opacity: '0', transform: 'translateY(30px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+      },
+    },
+  },
+  plugins: [],
+};

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Heart, Coffee, Sparkles, Download, Copy, Check } from 'lucide-react';
+import { Heart, Coffee, Sparkles, Copy, Check } from 'lucide-react';
 
 const tiers = [
   {
@@ -172,30 +172,6 @@ export default function Support() {
               Obrigado por fazer parte da jornada!
             </span>
           </div>
-        </div>
-
-        <div id="download" className="mt-20 text-center">
-          <span className="text-xs font-semibold text-crystal-400 tracking-[0.3em] uppercase mb-4 block">
-            Baixar
-          </span>
-          <h3 className="font-display font-bold text-3xl text-white mb-4">
-            Prefere jogar offline?
-          </h3>
-          <p className="text-midnight-200 max-w-xl mx-auto mb-8">
-            Baixe o jogo completo e jogue em qualquer lugar, mesmo sem internet.
-          </p>
-          <button
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-gradient-to-r from-gold-500 to-gold-600 text-midnight-950 font-semibold text-lg hover:from-gold-400 hover:to-gold-500 transition-all duration-300 shadow-glow-gold hover:scale-105"
-            onClick={() => {
-              const link = document.createElement('a');
-              link.href = '/worldbound.html';
-              link.download = 'worldbound.html';
-              link.click();
-            }}
-          >
-            <Download className="w-5 h-5" />
-            Baixar WORLDBOUND
-          </button>
         </div>
       </div>
     </section>

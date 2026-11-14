@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Play, Maximize2, Loader2, X, Gamepad2, Download } from 'lucide-react';
+import { Play, Maximize2, Loader2, X, Gamepad2 } from 'lucide-react';
 
 export default function PlaySection() {
   const [gameStarted, setGameStarted] = useState(false);
@@ -8,11 +8,6 @@ export default function PlaySection() {
   const startGame = () => {
     setLoading(true);
     setGameStarted(true);
-  };
-
-  const closeGame = () => {
-    setGameStarted(false);
-    setLoading(false);
   };
 
   const handleIframeLoad = () => {
@@ -30,11 +25,9 @@ export default function PlaySection() {
     }
   };
 
-  const downloadGame = () => {
-    const link = document.createElement('a');
-    link.href = '/worldbound.html';
-    link.download = 'worldbound.html';
-    link.click();
+  const closeGame = () => {
+    setGameStarted(false);
+    setLoading(false);
   };
 
   return (
@@ -95,13 +88,6 @@ export default function PlaySection() {
                 </span>
               </div>
               <div className="flex items-center gap-2">
-                <button
-                  onClick={downloadGame}
-                  className="p-2 rounded-lg bg-midnight-800/50 hover:bg-gold-500/20 text-midnight-200 hover:text-gold-300 transition-colors"
-                  title="Baixar jogo"
-                >
-                  <Download className="w-4 h-4" />
-                </button>
                 <button
                   onClick={goFullscreen}
                   className="p-2 rounded-lg bg-midnight-800/50 hover:bg-crystal-500/20 text-midnight-200 hover:text-crystal-300 transition-colors"

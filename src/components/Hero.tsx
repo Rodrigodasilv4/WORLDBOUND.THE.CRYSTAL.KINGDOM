@@ -1,4 +1,4 @@
-import { Play, Download, ChevronDown, Sparkles, Swords, Map } from 'lucide-react';
+import { Play, ChevronDown, Sparkles, Swords, Map } from 'lucide-react';
 
 const heroImage = '/assets/images/IMG_6099.jpeg';
 
@@ -62,13 +62,6 @@ export default function Hero() {
           >
             <Play className="w-5 h-5 fill-current group-hover:scale-110 transition-transform" />
             Jogar Grátis
-          </button>
-          <button
-            onClick={() => scrollTo('#download')}
-            className="group px-8 py-4 rounded-xl bg-glass text-gold-200 font-semibold text-lg hover:bg-gold-500/10 hover:border-gold-500/50 transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2 border border-gold-500/30"
-          >
-            <Download className="w-5 h-5 group-hover:translate-y-0.5 transition-transform" />
-            Baixar Jogo
           </button>
         </div>
 
